@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: finger-count-app
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run predict_app.py --server.port=8000
